@@ -1,5 +1,6 @@
 import './App.css';
 import { useState, useEffect } from "react";
+import MyChart from './MyChart';
 
 function App() {
   const [searchval, setSearchval] = useState();
@@ -63,7 +64,10 @@ function App() {
           Learn React
         </a>
         <br></br>
-        {display}
+        <div>{display}</div>
+        <div>
+          <MyChart/>
+        </div>
         
       </header>
     </div>
